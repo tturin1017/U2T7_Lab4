@@ -51,26 +51,118 @@ public class StringProblemsTest{
     }
 
     @Test
-    void testDefront1(){
+    void testDefont1(){
         StringProblems o = new StringProblems();
         String expectedOutput = "llo";
-        String studentOutput= o.deFront("Hello");
+        String studentOutput= o.deFont("Hello");
         assertEquals(expectedOutput,studentOutput);
     }
 
     @Test
-    void testDefront2(){
+    void testDefont2(){
         StringProblems o = new StringProblems();
         String expectedOutput = "va";
-        String studentOutput= o.deFront("java");
+        String studentOutput= o.deFont("java");
         assertEquals(expectedOutput,studentOutput);
     }
 
     @Test
-    void testDefront3(){
+    void testDefont3(){
         StringProblems o = new StringProblems();
         String expectedOutput = "aay";
-        String studentOutput= o.deFront("away");
+        String studentOutput= o.deFont("away");
         assertEquals(expectedOutput,studentOutput);
     }
+
+    @Test
+    void testWithoutX1(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Hi";
+        String studentOutput= o.withoutX("xHix");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testWithoutX2(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Hi";
+        String studentOutput= o.withoutX("xHi");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testWithoutX3(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Hxi";
+        String studentOutput= o.withoutX("Hxix");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString1(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Fizz";
+        String studentOutput= o.testfizzString("fig");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString2(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Buzz";
+        String studentOutput= o.testfizzString("dib");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString3(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "FizzBuzz";
+        String studentOutput= o.testfizzString("fib");
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+
+
+    @Test
+    void testfizzString2A(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "1!";
+        String studentOutput= o.testfizzString2(1);
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString2B(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "2!";
+        String studentOutput= o.testfizzString2(2);
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString2C(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Fizz!";
+        String studentOutput= o.testfizzString2(3);
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    @Test
+    void testfizzString2D(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "Buzz!";
+        String studentOutput= o.testfizzString2(10);
+        assertEquals(expectedOutput,studentOutput);
+    }
+
+    
+    @Test
+    void testfizzString2E(){
+        StringProblems o = new StringProblems();
+        String expectedOutput = "FizzBuzz!";
+        String studentOutput= o.testfizzString2(15);
+        assertEquals(expectedOutput,studentOutput);
+    }
+
 }
