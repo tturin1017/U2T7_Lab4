@@ -1,3 +1,4 @@
+package com.example.project;
 public class StringProblems{
     //empty constructor
     public StringProblems(){}
@@ -30,7 +31,9 @@ public class StringProblems{
     // deFront("Hello") → "llo"
     // deFront("java") → "va"
     // deFront("away") → "aay"
-    public String deFont(String s1){
+    //deFront("aapple") ->"apple"
+    //deFront("abee") - > "abee"
+    public String deFront(String s1){
         //implement code here
         return "";
     }
